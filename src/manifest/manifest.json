@@ -7,8 +7,8 @@
   "developer": {
     "name": "TeamsDev",
     "websiteUrl": "https://{{PUBLIC_HOSTNAME}}",
-    "privacyUrl": "https://{{PUBLIC_HOSTNAME}}",
-    "termsOfUseUrl": "https://{{PUBLIC_HOSTNAME}}"
+    "privacyUrl": "https://{{PUBLIC_HOSTNAME}}/privacy.html",
+    "termsOfUseUrl": "https://{{PUBLIC_HOSTNAME}}/tou.html"
   },
   "name": {
     "short": "myConnector",

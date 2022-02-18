@@ -16,7 +16,7 @@ const lint = !(argv["no-linting"] || argv.l === true);
 const config = [{
     entry: {
         server: [
-            path.join(__dirname, "/src/server.ts")
+            path.join(__dirname, "/src/server/server.ts")
         ]
     },
     mode: debug ? "development" : "production",
@@ -59,7 +59,7 @@ const config = [{
 {
     entry: {
         client: [
-            path.join(__dirname, "/src/configuration/client.ts")
+            path.join(__dirname, "/src/client/client.ts")
         ]
     },
     mode: debug ? "development" : "production",
@@ -93,7 +93,7 @@ const config = [{
         new webpack.EnvironmentPlugin({ PUBLIC_HOSTNAME: undefined, TAB_APP_ID: null, TAB_APP_URI: null }),
         new ForkTsCheckerWebpackPlugin({
             typescript: {
-                configFile: "./src/configuration/tsconfig.json"
+                configFile: "./src/client/tsconfig.json"
             }
         })
     ],
